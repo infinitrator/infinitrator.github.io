@@ -10,7 +10,7 @@ nav:
   - Лабораторные работы:
       - Список работ: labs/index.md
       - Лабораторная работа №1: labs/lab1.md
-      - Лабораторная работа №2: labs/lab2.md
+      - Лабораторная работа №2: LR-2/index.md
       - Лабораторная работа №3: labs/lab3.md
 
 markdown_extensions:
