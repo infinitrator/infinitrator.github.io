@@ -1,0 +1,22 @@
+on:
+  push:
+    workflows: build-site
+    filter:
+      branches: main
+
+workflows:
+  build-site:
+    tasks:
+      - name: build-site
+        cubes:
+          - name: build-mkdocs
+            image: python:3.12-slim
+            script:
+              - python -m pip install --disable-pip-version-check -r requirements.txt
+              - mkdocs build --strict --config-file source/mkdocs.yml --site-dir ../site
+          - name: publish-site
+            script:
+              - git checkout -B release
+              - git add --force site
+              - "git commit -m 'deploy: publish MkDocs site'"
+              - git push origin release --force
