@@ -8,3 +8,5 @@ __pycache__/
 /site/
 /lab4/*.csv
 /lab5/*.xlsx
+/lab6/titanic.csv
+/lab6/plots/
