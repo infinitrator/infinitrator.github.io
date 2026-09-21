@@ -16,6 +16,7 @@ nav:
       - Лабораторная работа №5: LR-5/index.md
       - Лабораторная работа №6: LR-6/index.md
       - Лабораторная работа №7: LR-7/index.md
+      - Лабораторная работа №8: LR-8/index.md
 
 markdown_extensions:
   - fenced_code
