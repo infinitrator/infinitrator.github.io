@@ -10,3 +10,5 @@ __pycache__/
 /lab5/*.xlsx
 /lab6/titanic.csv
 /lab6/plots/
+/lab7/positive.csv
+/lab7/negative.csv
