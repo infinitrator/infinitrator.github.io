@@ -7,3 +7,4 @@ __pycache__/
 .vscode/
 /site/
 /lab4/*.csv
+/lab5/*.xlsx
