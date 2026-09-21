@@ -6,7 +6,7 @@
 
 - `source/` — исходники MkDocs;
 - `source/docs/` — страницы в Markdown;
-- `docs/` — собранный сайт для GitHub Pages.
+- `.github/workflows/` — сценарий автоматической сборки и публикации.
 
 ## Тема
 
@@ -19,5 +19,7 @@
 
 ## Сборка
 
-    cd source
-    mkdocs build -d ../docs
+    mkdocs build --strict --config-file source/mkdocs.yml --site-dir ../site
+
+После push в ветку `main` сайт автоматически собирается и публикуется через
+GitHub Actions.
